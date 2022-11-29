@@ -1,0 +1,122 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(7, 10, 44);
+    background-size: cover;
+    background-position-x: center;
+    font-family: sans-serif;
+}
+.top{
+    text-align: center;
+    padding: 10px;
+    background: rgb(96, 1, 96);
+    color: aqua;
+    text-decoration: underline;
+}
+.menu-bar{
+    background: rgb(96, 1, 96);
+    text-align: center;
+}
+
+.menu-bar ul{ 
+    display: inline-flex;
+    list-style: none;
+}
+.menu-bar ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 10px;
+}
+.menu-bar ul li a{
+    color: orangered;
+    text-decoration: none;
+}
+.active, .menu-bar ul li:hover
+{
+    background: yellow;
+    border-radius: 10px;
+
+}
+
+.sub-menu-1{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background: rgb(96, 1, 96);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.menu-bar ul:hover .sub-menu-1 ul{
+    display: block;
+}
+.menu-bar ul:hover .sub-menu-1 ul li{
+    padding: 10px;
+    border-bottom: dashed;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu-bar ul:hover .sub-menu-1 ul li:last-child{
+    border-bottom: none;
+}
+.menu-bar ul:hover .sub-menu-1 ul li a:hover{
+    color: cyan;
+}
+
+.parent{
+    display: inline-flex;
+    border: 2px solid black;
+}
+
+.child{
+    border: 2px solid black;
+    padding: 140px;
+}
+
+.h1{
+   color: aqua;
+   text-align: center;
+   margin-bottom: 10px;
+}
+
+table{
+   width: 100%;
+   text-align: center;
+}
+
+th{
+   padding: 10px;
+   background: rgb(96, 1, 96);
+   border: 1px solid;
+   color: orangered  
+}
+
+td{
+   padding: 10px;
+   border: 1px solid orangered;
+   color: aqua;
+}
+
+input{
+    margin: 8px;
+}
+
+.showdata {
+   color: aqua;
+   padding: 20px;
+   background: rgb(9, 0, 0)
+}
+.form-group {
+   padding: 8px;
+   color: orangered;
+}
+.form-button{
+    margin-left: 40%;
+    background-color: aqua;
+}

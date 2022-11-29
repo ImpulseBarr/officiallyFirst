@@ -1,0 +1,97 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(7, 10, 44);
+    background-size: cover;
+    background-position-x: center;
+    font-family: sans-serif;
+}
+.top{
+    text-align: center;
+    padding: 10px;
+    background: rgb(96, 1, 96);
+    color: aqua;
+    text-decoration: underline;
+}
+.menu-bar{
+    background: rgb(96, 1, 96);
+    text-align: center;
+}
+
+.menu-bar ul{ 
+    display: inline-flex;
+    list-style: none;
+}
+.menu-bar ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 10px;
+}
+.menu-bar ul li a{
+    color: orangered;
+    text-decoration: none;
+}
+.active, .menu-bar ul li:hover
+{
+    background: yellow;
+    border-radius: 10px;
+
+}
+
+.sub-menu-1{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background: rgb(96, 1, 96);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.menu-bar ul:hover .sub-menu-1 ul{
+    display: block;
+}
+.menu-bar ul:hover .sub-menu-1 ul li{
+    padding: 10px;
+    border-bottom: dashed;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu-bar ul:hover .sub-menu-1 ul li:last-child{
+    border-bottom: none;
+}
+.menu-bar ul:hover .sub-menu-1 ul li a:hover{
+    color: cyan;
+}
+.fa-angle-right{
+    float: right;
+}
+table{
+    width: 85%;
+    margin-top: 5%;
+    margin-left: 8%;
+    /*border-collapse: collapse;*/
+}
+th{
+    padding: 10px;
+    background: rgb(96, 1, 96);
+    border: 1px solid;   
+}
+td{
+    padding: 10px;
+    border: 1px solid orangered;
+    color: aqua;
+}
+thead{
+    color: orangered;
+}
+h1{
+    color: aqua;
+    text-align: center;
+    margin-top: 10px;
+}

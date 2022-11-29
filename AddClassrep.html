@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Add Classrep</title>
+</head>
+<body>
+	<form method="post" action="AddClassrep.php" enctype="multipart/form-data">
+        <h1 style="text-align:center; color:aqua">Add New Classrep</h1>
+		<div class="form-group">
+			<label>Reg No</label>
+			<input type="text" name="Id" placeholder="Enter Reg NO" maxlength="5" required  class="form-control">
+		</div>
+		<div class="form-group">
+			<label>Name</label>
+			<input type="text" name="Name" maxlength="30" class="form-control">
+		</div>
+        <div class="form-group">
+			<label>Class</label>
+			<input type="text" name="Class" maxlength="5" class="form-control">
+		</div>
+		<div class="form-group">
+			<label>Phone</label>
+			<input type="text" name="Phone" maxlength="15" class="form-control">
+		</div>
+		<div class="form-group">
+			<label>Email</label>
+			<input type="email" name="Email" maxlength="50" class="form-control">
+		</div>
+        <div class="form-group">
+			<input type="submit" value="Add" class="button">
+			<input type="reset" value="Clear" class="button">
+		</div>
+	</form>
+	<style type="text/css">
+        body{
+            background-color: rgb(7, 10, 44);
+        }
+		.form-group {
+		    margin-bottom: 30px;
+		}
+		.form-control{
+			width: calc(100% - 50px);
+			padding: 5px;
+			border: 1px solid orangered;
+			border-radius: 5px;
+		}
+		form{
+            color:aqua;
+			width: 70%;
+			left: 20%;
+			position: absolute;
+			top: 10%;
+		}
+
+        .button:hover{
+            color: aquamarine;
+
+        }
+
+        .button{
+            width: 150px;
+            margin: 30px;
+            padding: 10px;
+            padding-left: 30px;
+            border-radius: 9px;
+            background: rgb(3, 142, 180)
+        }
+	</style>
+</body>
+</html>

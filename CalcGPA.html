@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>EENG Student Grade Calculator</title>
+   <!-- link for font -->
+   <link rel="stylesheet" href="CalcGPA.css" />
+</head>
+<body>
+   <div class="top">Electrical and ELectronics Engineering Vitals</div>
+    <div class="menu-bar">
+        <ul>
+            <li></i><a href="Home.html">Home</a></li>
+
+
+
+            <li></i><a href="#">Vital contacts</a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="Lecturers.html">Lecturers</a></li>
+                        <li><a href="Classreps.html">Class Reps</a></li>
+                    </ul>
+                </div>
+            </li>
+
+
+
+            <li><a href="#">Modules</a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="FirstSemester.html">First Semester</a></li>
+                        <li><a href="SecondSemester.html">Second Semester</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            
+            <li class="active"></i><a href="#">Calc GPA</a></li>
+
+        </ul>
+</div>
+   <!-- GPA system-->
+<div class="parent">
+<div class="child">
+   <div>
+      <h1 class="h1">Grade Point System</h1>
+   </div>
+   <div>
+      <table>
+         <thead>
+            <tr>
+               <th>Letter Grade</th><th>Percentage Range</th><th>Grade Point</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td>A</td><td>70%-100%</td><td>4</td>
+            </tr>
+            <tr>
+               <td>B+</td><td>65%-69%</td><td>3.75</td>
+            </tr>
+            <tr>
+               <td>B</td><td>60%-64%</td><td>3.25</td>
+            </tr>
+            <tr>
+               <td>B-</td><td>55%-59%</td><td>3.00</td>
+            </tr>
+            <tr>
+               <td>C+</td><td>50%-54%</td><td>2.75</td>
+            </tr>
+            <tr>
+               <td>C</td><td>46%-49%</td><td>2.25</td>
+            </tr>
+            <tr>
+               <td>C-</td><td>40%-45%</td><td>2.00</td>
+            </tr>
+            <tr>
+               <td>D</td><td>35%-39%</td><td>1.75</td>
+            </tr>
+            <tr>
+               <td>E</td><td>30%-34%</td><td>1.25</td>
+            </tr>
+            <tr>
+               <td>F</td><td>0%-29%</td><td>1.00</td>
+            </tr>
+         </tbody>
+      </table>
+   </div>
+</div>
+
+<div class="child">
+   <!-- GPA-->
+   <div>
+      <h1 style="color: aqua">Grade Point Average Calculator</h1>
+   </div>
+   <div class="app">
+      <div class="form-group">
+         Enter Student's Grade Point in Module A:
+         <input type="text" class="form-control" placeholder="Module A" id="ModuleA" />
+      </div>
+      <div class="form-group">
+         Enter Student's Grade Point in Module B:
+      <input type="text" class="form-control" placeholder="Module B" id="ModuleB" />
+      </div>
+      <div class="form-group">
+         Enter Student's Grade Point in Module C:
+         <input type="text" class="form-control" placeholder="Module C" id="ModuleC" />
+      </div>
+      <div class="form-group">
+         Enter Student's Grade Point in Module D:
+         <input type="text" class="form-control" placeholder="Module D" id="ModuleD" />
+      </div>
+      <div class="form-group">
+         Enter Student's Grade Point in Module E:
+         <input type="text" class="form-control" placeholder="Module E" id="ModuleE" />
+      </div>
+      <div class="form-group">
+         Enter Student's Grade Point in Module F:
+         <input type="text" class="form-control" placeholder="Module F" id="ModuleF" />
+      </div>
+      <div class="form-group">
+         Enter Student's Grade Point in Module G:
+         <input type="text" class="form-control" placeholder="Module G" id="ModuleG" />
+      </div>
+      <div class="form-group">
+         Enter Student's Grade Point in Module H:
+         <input type="text" class="form-control" placeholder="Module H" id="ModuleH" />
+      </div>
+      <div class="form-group">
+         Enter Student's Grade Point in Module I:
+         <input type="text" class="form-control" placeholder="Module I" id="ModuleI" />
+      </div>
+      <div class="form-group">
+         Number Of Modules To Calculate For:
+         <input type="text" class="form-control" placeholder="Number OF Modules" id="Number" />
+      </div>
+      <div>
+         <input type="button" value="Show GPA" class="form-button" onclick="calculate()" />
+      </div>
+   </div>
+   <div class="showdata">
+
+      <p id="showdata"></p>
+   </div>
+
+
+</div>
+</div>
+   <script src="CalcGPA.js"></script>
+</body>
+</html>
